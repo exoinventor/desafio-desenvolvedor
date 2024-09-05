@@ -1,0 +1,28 @@
+{
+    "name": "roleplayinggame/arg",
+    "description": "No description",
+    "type": "project",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "ARG\\Controller\\": "ARG/Controller/",
+            "ARG\\Model\\": "ARG/Model/",
+            "ARG\\View\\": "ARG/View/"
+        },
+        "files": [
+            "ARG/Config.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Bernardino Junior",
+            "email": "contato@roleplayinggame.quest",
+            "role": "developer",
+            "homepage": "https://roleplayinggame.quest"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+
+    }
+}
