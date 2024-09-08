@@ -7,30 +7,30 @@ namespace Composer\Autoload;
 class ComposerStaticInit03009ded2ae43855bd1c4cab4b61f717
 {
     public static $files = array (
-        'e9067444f4937152729a02ce7f455c26' => __DIR__ . '/../..' . '/ARG/Config.php',
+        '80529d15a0cc09ccec74ba93fc71aa4b' => __DIR__ . '/../..' . '/COMPOSITION/Config.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'A' => 
+        'C' => 
         array (
-            'ARG\\View\\' => 9,
-            'ARG\\Model\\' => 10,
-            'ARG\\Controller\\' => 15,
+            'COMPOSITION\\View\\' => 17,
+            'COMPOSITION\\Model\\' => 18,
+            'COMPOSITION\\Controller\\' => 23,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'ARG\\View\\' => 
+        'COMPOSITION\\View\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/ARG/View',
+            0 => __DIR__ . '/../..' . '/COMPOSITION/View',
         ),
-        'ARG\\Model\\' => 
+        'COMPOSITION\\Model\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/ARG/Model',
+            0 => __DIR__ . '/../..' . '/COMPOSITION/Model',
         ),
-        'ARG\\Controller\\' => 
+        'COMPOSITION\\Controller\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/ARG/Controller',
+            0 => __DIR__ . '/../..' . '/COMPOSITION/Controller',
         ),
     );
 

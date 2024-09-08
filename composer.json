@@ -5,12 +5,12 @@
     "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "ARG\\Controller\\": "ARG/Controller/",
-            "ARG\\Model\\": "ARG/Model/",
-            "ARG\\View\\": "ARG/View/"
+            "COMPOSITION\\Controller\\": "COMPOSITION/Controller/",
+            "COMPOSITION\\Model\\": "COMPOSITION/Model/",
+            "COMPOSITION\\View\\": "COMPOSITION/View/"
         },
         "files": [
-            "ARG/Config.php"
+            "COMPOSITION/Config.php"
         ]
     },
     "authors": [
