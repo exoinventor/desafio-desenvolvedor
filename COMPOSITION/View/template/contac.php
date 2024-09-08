@@ -14,9 +14,11 @@ event.preventDefault();
 const form = document.querySelector('form#form');
 const datas = new FormData(form);
 const fields = Object.fromEntries(datas.entries());
-console.log('fields:: ' + JSON.stringify(fields,null,1));
+/* console.log('fields:: ' + JSON.stringify(fields,null,1)); */
 
-const apiUrl = 'https://lightgrey-panther-903242.hostingersite.com/contact';
+let domaiName = window.location.hostname;
+let domain = (domaiName == 'localhost') ? 'http://127.0.0.1/desafio-desenvolvedor' : 'https://' + domaiName;
+const apiUrl = domain + '/contact';
 
 let xmlreq = jQuery.post( apiUrl, { "form": fields });
 xmlreq.setRequestHeader("Accept", "application/json");

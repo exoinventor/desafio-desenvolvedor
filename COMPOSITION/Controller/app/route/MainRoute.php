@@ -25,7 +25,16 @@ if(!class_exists('MainRoute'))
                     return parent::screen_display('home');
                     /* var_dump('Error 0002 Processing Request da ' . $action . ' no ' . $controller, 1); */ 
                 }
+
+                if(strstr($action, 'spreadsheet'))
+                {
+                    $controller_instance->$action($_FILES);
+                }
+                else
+                {
                     $controller_instance->$action((object) $_REQUEST);
+                }
+                    
             }
             catch(Exception $e)
             {
@@ -38,10 +47,12 @@ if(!class_exists('MainRoute'))
             $route = array(
             'GET' => array(
                 '/' => fn () => $this->display_app_route( 'HomeController', 'index' ),
-                '/contact' => fn () => $this->display_app_route( 'ContactController', 'index' )
+                '/contact' => fn () => $this->display_app_route( 'ContactController', 'index' ),
+                '/spreadsheet' => fn () => $this->display_app_route( 'SpreadsheetController', 'index' )
             ),
             'POST' => array(
-                '/contact' => fn () => $this->display_app_route( 'ContactController', 'store' )
+                '/contact' => fn () => $this->display_app_route( 'ContactController', 'store' ),
+                '/spreadsheet' => fn () => $this->display_app_route( 'SpreadsheetController', 'spreadsheet' )
             )
             );
                 return $route;
